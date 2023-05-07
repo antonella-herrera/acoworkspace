@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Tipography*/
+@import url("https://use.typekit.net/aum6dag.css");
+/*Icons*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/*vars*/
+:root {
+    /*colors*/
+    --black: #070707;
+    --white: #e7ddd5;
+    --gradient_red_bg: radial-gradient(56.96% 65.45% at 94.01% 23.56%, #D41E29 0%, #F36022 100%);
+    --gradient_yw_bg: radial-gradient(87.59% 71.36% at 66.76% 69.11%, #FFDE00 28.96%, #FFA718 78.96%);
+    --gradient_blue_bg: radial-gradient(130.52% 83.58% at 139.51% 87.25%, #11559D 37.56%, #6965B0 86.74%);
+    /*Tipography*/
+    --title: "neue-haas-grotesk-display, sans-serif";
+    --text: "neue-haas-grotesk-text", sans-serif;
+    --regular_text: 400;
+    --medium_text: 500;
+    --light_display: 400;
+    --regular_display: 500;
+    --medium_display: 600;
+    --bold: 700;
+}
+
+/*Basics*/
+body,
+section {
+    background-color: var(--white);
+    font-family: var(--text);
+    color: var(--black);
+}
+
+section{
+    margin: 4.5rem 0;
+}
+h1,
+h2 {
+    font-weight: var(--bold);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/*img*/
+.img-gradient {
+    width: 70%;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.bg-black-aco {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bg-gradient-blue,
+.bg-gradient-red,
+.bg-gradient-yw {
+    font-weight: var(--medium_text);
+}
+
+.bg-gradient-blue,
+.bg-gradient-red {
+    color: var(--white);
+}
+
+.bg-gradient-red {
+    background: var(--gradient_red_bg);
+}
+
+.bg-gradient-yw {
+    background: var(--gradient_yw_bg);
+    color: #070d17
+}
+
+.bg-gradient-blue {
+    background: var(--gradient_blue_bg);
+}
+
+.bg-solution {
+    border-radius: 20px;
+}
+
+/*heaader*/
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #E7DDD5;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+.card-round {
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+/*mobile*/
+.hero .row {
+    flex-direction: column-reverse;
+}
+
+.hero img {
+    width: 65%;
+    padding-top: 18%;
+}
+
+
+
+.card-round h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-round img {
+    width: 50px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.btn-gradient {
+    background: linear-gradient(180deg, #D41E29 0%, #EA4D24 19.06%, #F36022 100%);
+    border-radius: 15px;
+    border: none;
+    min-width: 180px;
+    color: #E7DDD5;
+    text-transform: uppercase;
+}
+
+.section-space {
+    padding: 15% 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.bg-img {
+    background-image: url(../img/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-hero {
+    height: 100vh;
+    background-size: cover;
+}
+
+.box-text {
+    width: 45%;
+    max-width: 650px;
+}
+
+.bg-solution {
+    min-height: 100px;
+    height: 80vh;
+    background-size: cover;
+}
+
+/*header*/
+@media (min-width: 992px) {
+    .navbar-collapse {
+        flex-grow: unset
+    }
+
+    .bg-hero .row {
+        justify-content: flex-end;
+        align-content: center;
+        height: 100%;
+    }
+
+    .hero .row {
+        flex-direction: unset;
+
+    }
+
+    footer {
+        padding: 5%;
+
+    }
+    .footer-menu{
+        display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+}
+
+.is-widget #sb-timeline #steps-nav #menu-active-bg {
+    background: #070d17;
+}
+
+
+
+/*form*/
+form {
+    background-color: #070d17;
+}
+
+form input,
+form textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px #E7DDD5 solid;
+    margin-bottom: 15px;
+    color: #E7DDD5;
+    background-color: transparent;
+}
+
+form label {
+    color: #E7DDD5;
+}
+
+footer {
+    background-color: #070d17;
+    color: #E7DDD5;
+    padding: 2rem;
+}
+
+footer .subtitle {
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+
+/*desktop*/
+@media (min-width:992px) {
+    h1 {
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 120%;
+
+    }
+
+}
+
+.hero,
+.hero-index {
+    padding-top: 2rem;
+    align-items: center;
+    display: flex;
+    margin-top: 0;
+}
+
+.hero-index {
+    height: 100vh;
+}
+
+
+.hero {
+    height: 40vh;
+    background-image: var(--gradient_red_bg);
+    color: var(--white);
+}
+
+.nosotros{
+    background-image: url();
+}
+
+h1 span {
+    color: #EA4D24;
+}
+
+header.down {
+    background-color: #E7DDD5;
+}

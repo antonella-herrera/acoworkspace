@@ -1,0 +1,29 @@
+$color-texto:#070707;
+$color-interacciones:linear-gradient(180deg, #D41E29 0%, #EA4D24 19.06%, #F36022 100%);
+$color-titulos: #F36022;
+$color-claro:#e7ddd5;
+
+$tipo-titulo:"neue-haas-grotesk-display", sans-serif;
+$tipo-texto:"neue-haas-grotesk-text", sans-serif;
+
+
+//mixin flex
+@mixin flex($direction, $justify, $aling){
+    display: flex;
+    flex-direction:$direction ;
+    justify-content: $justify;
+    align-items: $aling ;
+    
+}
+
+@mixin fondo ($fondo, $color-tipo) {
+    background-color: $fondo;
+    color: $color-tipo;
+}
+
+@mixin fondoimg($url, $position, $size){
+    background-image: url($url);
+    background-position: $position;
+    background-size: $size;
+    background-repeat: no-repeat;
+}

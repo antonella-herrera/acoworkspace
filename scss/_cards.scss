@@ -1,0 +1,171 @@
+/*CARDS*/
+.card {
+    background-color: #FDF5EF;
+    text-align: center;
+    border: none;
+    border-radius: 1.25rem;
+    margin-bottom: 1em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    max-width: 379px;
+
+    &-body{
+        max-width: 330px;
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: start;
+        line-height: 1, 875rem;
+        padding-left: 1rem;
+        margin-bottom: 30px;
+
+        li::before {
+            content: url("../img/cheack.svg");
+            padding-right: 8px;
+        }
+
+        .tachado::before {
+            content: url("../img/none.svg");
+        }
+    }
+}
+
+
+
+.funcion .card,
+.beneficios .card,
+.creadoras .card {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+.pago {
+    .card {
+        min-height: 140px;
+        min-height: 140px;
+        justify-content: center;
+        align-items: center;
+        h5 {
+            font-size: 1rem;
+        }
+        .texto {
+            padding-left: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+.tachado {
+    text-decoration-line: line-through;
+
+    color: rgba(85, 68, 68, 0.6);
+}
+
+
+.iconos-pago {
+    width: 80px;
+}
+
+.unite {
+    .card {
+        min-width: 277.78px;
+        width: 90%;
+        margin: 1.25rem auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media screen and (min-width:992px) {
+            height: 95%;
+            .card-title{
+                font-size: 30px;
+            }
+        }
+        
+    }
+
+    @media screen and (min-width:920px) {
+        .mini-chef {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .chef {
+            margin-left: 0;
+            margin-right: auto;
+
+        }
+    }
+}
+
+.titulo-suscripciones {
+    border-bottom: 1px solid;
+    margin-bottom: 20px;
+
+    h5 {
+        color: $color-titulos;
+        font-family: $tipo-titulo;
+        font-weight: 700;
+    }
+
+    h3 {
+        @extend h5;
+        font-size: 48px;
+    }
+
+}
+
+.popular {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.beneficios{
+    .card-title{
+        font-size: 20px;
+        margin-bottom:0;
+        line-height: 30px;
+
+    }
+    .card-text{
+        margin-bottom: 10px;
+    }
+}
+
+.fondo-rojo {
+    background-image:radial-gradient(56.96% 65.45% at 94.01% 23.56%, #D41E29 0%, #F36022 100%);
+    color:$color-claro;
+}
+.fondo-amarillo {
+    background-image:radial-gradient(87.59% 71.36% at 66.76% 69.11%, #FFDE00 28.96%, #FFA718 78.96%);
+    color:$color-claro;
+}
+.fondo-azul {
+    background-image:radial-gradient(130.52% 83.58% at 139.51% 87.25%, #11559D 37.56%, #6965B0 86.74%);
+    color:$color-claro;
+}
+
+.card-round {
+    background-color: $color-texto;
+    color: $color-claro;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card-round h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.card-round img {
+    width: 50px;
+    display: block;
+    margin-bottom: 40px;
+}

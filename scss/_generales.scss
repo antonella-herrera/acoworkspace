@@ -1,0 +1,61 @@
+/*GENERALES*/
+
+body {
+    background-color: $color-claro;
+    font-family: $tipo-texto;
+}
+.body{
+    background-color: $color-texto;
+    color: $color-claro;
+}
+
+section{
+    padding:1.875rem 0;
+    margin-top: 2rem;
+    @media screen and (min-width:992px) {
+        margin: 4.5rem 0;
+        
+    }
+}
+section[id]{
+    scroll-margin-top: 50px;
+}
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.w-40 {
+    width: 45%;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.fondo-amarillo {
+    @include fondoimg( '../img/fondo-amarillo.png', center, cover );
+}
+
+.fondo-rosa {
+    @include fondoimg( '../img/fondo-rosa.png', bottom, cover );
+}
+.fondo-amarillo-chico {
+    background-image: url(../img/fondo-amarillo-chico.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bi-star-fill {
+    color: #F7A940;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}

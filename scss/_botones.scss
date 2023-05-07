@@ -1,0 +1,59 @@
+/*botones*/
+.btn {
+    margin-right: 1em;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    min-width: 175px;
+    text-transform: uppercase;
+}
+
+
+
+.boton-relleno {
+    background: $color-interacciones;
+    color: #EADBF1;
+
+}
+
+.boton-outline {
+    border: 2px solid $color-interacciones;
+    color: $color-interacciones;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: $color-interacciones;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: start;
+}
+
+#contacto{
+    .boton{
+        width: fit-content;
+        margin: auto;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+}
+
+.boton-centro{
+    width: fit-content;
+    margin: 1rem auto;
+    
+        @media screen and (min-width:992px) {
+            .btn{
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+            
+        }
+    
+}
+
+.link-chico{
+    color: $color-interacciones;
+    text-transform: uppercase;
+    
+}

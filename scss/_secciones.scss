@@ -1,0 +1,230 @@
+/*INICIO*/
+.inicio {
+    h2{
+        text-align: start;
+        padding-left: 2rem;
+    }
+    p{
+        
+        @media screen and (min-width:992px) {
+            padding-left: 2rem;
+            
+        }
+    }
+    ul,p {
+        padding-right: 0.5rem;
+        list-style-type: none;
+        line-height: 24px;
+        li{
+            display: flex;
+            &::before{
+                content: url("../img/lista.svg");
+                width: 37px;
+                margin-right: 14px;
+                margin-bottom: 30px;
+            }
+            h3{
+                margin-bottom: 0;
+            }
+            
+        }
+
+        
+    }
+
+    >div {
+        align-items: center;
+        padding: 2em 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    img {
+        padding-left: 1.5em;
+        margin-left:  auto;
+        margin-right: auto;
+        margin-bottom: 1.5em;
+        max-width: 504px;
+
+    }
+
+}
+
+.funcion {
+    .card img {
+        width: 153px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.separador {
+    text-align: center;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1.5em;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    .container{
+        max-width: 1058px;
+    }
+
+    .burbuja {
+        width: 150px;
+        margin: 1.5rem auto;
+    }
+
+    span {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.62);
+    }
+
+}
+
+
+.titulos-secciones{
+    h2{
+        @media screen and (min-width:992px) {
+            margin-bottom: 13px;
+            line-height: 47px;
+            
+        }
+    }
+    max-width: 699px;
+    margin: 0 auto;
+    p{
+        padding-bottom: 1.875rem;
+        line-height: 30px;
+        font-size: 1.25rem
+    }
+    
+ }
+
+ .creadoras{
+    .retrato-creadora{
+     min-height: 260px;
+     max-width: 455px;
+     margin: 20px auto;
+    }
+ }
+
+.marcas{
+    border-top:1px solid rgba(85, 68, 68, 0.5); ;
+    border-bottom: 1px solid rgba(85, 68, 68, 0.5);;
+    padding: 20px 0;
+    margin-top:4rem;
+    >div{
+        max-width: 846px;
+        margin: 0 auto;
+    }
+}
+
+.comparti{
+    padding: 2.5em 0;
+    article{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        div:first-child {
+            margin: 0 auto;
+            @media screen and (min-width:920px) {
+                margin: 0;
+            }
+
+        }
+        @media screen and (min-width:920px) {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            padding:0.5rem;
+            @media screen and (min-width:920px) {
+                text-align: start;
+                padding-left: 0;
+            }
+        }
+        .texto{
+            text-align: center;
+            @media screen and (min-width:920px) {
+                text-align: start;
+                width: 50%;
+                max-width: 430px;
+            }
+            
+        }
+    }
+
+}
+
+.galeria{
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+    .col-6, .col-md-6, .col-lg-3,.col-12, .col-md-12, .col-lg-6{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+.img-grande-1{
+    grid-area: img-grande-1;
+}
+.img-grande-2{
+    grid-area:img-grande-2;
+}
+.img-chica-1{
+    grid-area: img-chica-1;
+}
+.img-chica-2{
+    grid-area: img-chica-2;
+}
+.img-chica-3{
+    grid-area: img-chica-3;
+}
+.img-chica-4{
+    grid-area: img-chica-4;
+}
+
+.galeria-grid{
+    display: grid;
+    grid-template-areas: 
+    "img-grande-1 img-grande-1"
+    "img-chica-1  img-chica-2"
+    "img-chica-3 img-chica-4"
+    "img-grande-2 img-grande-2";
+    gap: 0.5rem;
+    @media screen and (min-width:992px){
+        grid-template-areas: 
+        "img-grande-1 img-grande-1 img-chica-1  img-chica-2"
+        "img-chica-3 img-chica-4 img-grande-2 img-grande-2";
+        gap: 1rem;
+    }
+}
+
+#contacto{
+    .imagen{
+        max-width: 496px;
+        margin-left: auto;
+        margin-right: 1rem;
+        @media screen and (min-width:768px) {
+            margin-right: auto;
+            
+        }
+    }
+}
+
+.marcas>div>div{
+    margin: 2rem 0;/*
+    @media screen and (min-width:772px) {
+        margin: unset;
+        
+    }*/
+}
