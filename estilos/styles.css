@@ -190,7 +190,7 @@ button {
 .body .navbar-light .navbar-nav .nav-link {
   color: #e7ddd5;
 }
-.body h2 span {
+.body h2 span, .body h1 span {
   color: antiquewhite;
 }
 
