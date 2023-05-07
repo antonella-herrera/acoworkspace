@@ -187,6 +187,13 @@ button {
   background-color: #070707;
 }
 
+.body .navbar-light .navbar-nav .nav-link {
+  color: #e7ddd5;
+}
+.body h2 span {
+  color: antiquewhite;
+}
+
 header {
   background-color: #e7ddd5;
   position: fixed;

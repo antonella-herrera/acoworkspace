@@ -7,6 +7,16 @@
 
     }
 }
+.body{
+    .navbar-light .navbar-nav .nav-link{
+        color: $color-claro;}
+        h2{
+            span{
+                color: antiquewhite;
+            }
+        }
+
+}
 header{
            background-color: $color-claro;
            position: fixed;
