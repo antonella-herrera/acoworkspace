@@ -41,8 +41,9 @@
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
+            <a href="reservas.html" class="btn boton-relleno">Reserva</a>
           </ul>
-          <a href="reservas.html" class="btn boton-relleno">Reserva</a>
+          
         </div>
       </div>
     </nav>
@@ -58,45 +59,50 @@
         </article>
     </section>
 
-            <!--contacto-->
+    <!--contacto-->
     <section class="container" id="contacto">
-        <article class="row align-items-lg-center" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-          <!--contacto-->
-          <form class="col-12 col-lg-6">
-            <div class="row">
-              <div class="form-floating col">
-                <input type="text" class="form-control" id="floatingNombre" placeholder="Password">
-                <label for="floatingNombre" style="margin: 0.5rem;">Nombre</label>
-              </div>
-  
-              <div class="form-floating col">
-                <input type="text" class="form-control" id="floatingApellido" placeholder="Password">
-                <label for="floatingApellido"  style="margin: 0.5rem;">Apellido</label>
-              </div>
+      <div class="titulos-secciones" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+        <h2 class="center">¿Te quedaste con dudas?</h2>
+        <p class="center">Escribinos, estamos atentos para responder todas las inquietudes que tengas. Dejanos tus datos para
+          poder ayudarte.</p>
+      </div>
+      <article class="row align-items-lg-center" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+        <!--contacto-->
+        <form action="form.php" method="post" class="col-12 col-lg-6">
+          <div class="row">
+            <div class="form-floating col">
+              <input  name="nombre" type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
+              <label for="floatingNombre" style="margin: 0.5rem;">Nombre</label>
             </div>
-  
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Mail</label>
-            </div>
-  
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Dejanos tu mensaje acá" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Mensaje</label>
-            </div>
-            <div class="boton">
-              <button type="submit" class="btn boton-relleno">Enviar</button>
-            </div>
-            
-          </form>
-          <div class="col-12 col-lg-6">
-            <div class="imagen">
-              <img src="img/contacto.png" alt="" class="w-100">
+
+            <div class="form-floating col">
+              <input name="apellido" type="text" class="form-control" id="floatingApellido" placeholder="Apellido">
+              <label for="floatingApellido"  style="margin: 0.5rem;">Apellido</label>
             </div>
           </div>
-        </article>
-      </section>
+
+          <div class="form-floating mb-3">
+            <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Mail</label>
+          </div>
+
+          <div class="form-floating">
+            <textarea name="mensaje" class="form-control" placeholder="Dejanos tu mensaje acá" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Mensaje</label>
+          </div>
+          <div class="boton">
+            <button type="submit" class="btn boton-relleno">Enviar</button>
+          </div>
+          
+        </form>
+        <div class="col-12 col-lg-6">
+          <div class="imagen">
+            <img src="img/contacto.png" alt="" class="w-100">
+          </div>
+        </div>
+      </article>
+    </section>
   
   
     </main>
@@ -174,6 +180,7 @@
   
     <!--js local-->
     <script src="js/menu.js"></script>
+    <script src="js/downmenu.js"></script>
   </body>
   
   </html>

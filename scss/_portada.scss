@@ -2,15 +2,23 @@
 .portada {
    /* @include fondoimg('../img/fondo-rosa.png', bottom, cover);*/
     height: fit-content;
-    margin-top: 50px;
-    padding: 1em;
-    padding-bottom: 2.5em;
-
-
+    margin-top:0;
+    padding: 0em;
+    .carousel-item{
+        height: 100vh;
+        img, source{
+            object-fit: cover; 
+            height: 100%;
+            @media screen and (min-width:425px){
+                height: unset;
+            }
+        }
+    }
     @media screen and (min-width:920px) {
         flex-direction: row;
         padding: 0;
         height: 100vh;
+        width: 100%;
     }
 
     .img-portada {
@@ -24,7 +32,16 @@
     }
 
     .portada-texto {
-        padding: 2em;
+        padding-left: 1.5rem;
+        padding-right: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        @media screen and (min-width:920px) {
+            padding: 3rem 3rem 2rem 3rem;
+            margin-left: 1rem;
+        }
+
   /*      @media screen and (min-width:920px) {
             width: 50%;
             @include flex(row, end, center);
@@ -39,3 +56,51 @@
     }
 
 }
+
+/*portada con slide*/
+
+.col-texto{
+    height: 95vh;
+    margin-top: 20%;
+    @media screen and (min-width: 920px) {
+        margin-top: unset;   
+    }
+}
+.postada_base{
+    position: relative;
+    @media screen and (min-width:920px){
+        height: 100vh;
+    }
+    height: 90vh;
+    .carrusel_poratda{
+        position:absolute;
+        width: 100%;
+    }
+    .portada_texto_base{
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        span{
+            color: $color-claro;
+        }
+        .fondo-negro{
+            border-radius: 25px;
+            padding-left: 1rem; 
+            p{
+                width: 100%;
+                line-height: 120%;
+
+            }
+            @media screen and (min-width:920px){
+                padding-left: 3rem;
+                p{
+                    width: 90%;
+                    line-height: unset;
+}
+                }
+            }
+            
+        }
+    }

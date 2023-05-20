@@ -1,24 +1,21 @@
 /*header*/
 
 .body{
-    header{
-        background-color: $color-texto;
-        
-
-    }
-}
-.body{
-    .navbar-light .navbar-nav .nav-link{
-        color: $color-claro;}
+/*    .navbar-light .navbar-nav .nav-link{
+        color: $color-claro;}*/
         h2,h1{
             span{
-                color: antiquewhite;
+                color: #faebd7;
             }
         }
 
 }
+
+.abajo{
+    background-color: $color-claro;
+}
 header{
-           background-color: $color-claro;
+       /*    background-color: $color-claro;*/
            position: fixed;
            top:0;
            width: 100%;
@@ -63,6 +60,9 @@ footer {
     }
     p{
         line-height: 24px;
+        a{
+            color: $color-titulos;
+        }
         
     }
     .link{
@@ -79,6 +79,9 @@ footer {
         i{
             color: $color-interacciones;
             margin-right: 1rem;
+        }
+        a{
+            color: $color-titulos;
         }
     }
 }
