@@ -9,9 +9,9 @@ $mensaje = "Su email es: " . $email . ",\r\n";
 $mensaje = "Mensaje" . $_POST['mensaje'] . ",\r\n";
 
 $destinatario = 'antonella@mujeres2000.org.ar';
-$asunto = "Este mail fue envio desdes ACOWorspace.com";
+$asunto = "Este mail fue envio desdes ACO Worspace";
 
-mail($destinatario, $asunto, utf8_decode($mensaje), $header);
+mail($destinatario, $asunto, $mensaje, $header);
 
 header('Location:exito.html');
 

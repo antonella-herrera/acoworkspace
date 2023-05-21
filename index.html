@@ -10,10 +10,32 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!--aos-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!--iconos boostrap-->
+  <!--iconos boostrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <!--CSS-->
   <link rel="stylesheet" href="estilos/styles.css">
+  <!--SEO-->
+  <meta name="description" content="ACO Workspace">
+  <meta name="keywords"
+    content="workspace, cowork, coworking, creative content, creacion de contenido, espacio de trabajo, departamentos, aparts">
+  <meta name="author" content="Antonella Herrera">
+  <meta name="description"
+    content="¡El lugar donde tenés que estar! Muchos espacios un solo objetivo: que siempre dispongas de todas las comodidades que necesitas para trabajar">
+  <!--FIN DE SEO-->
+
+  <!--Open Graph-->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ACO Workspace">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://acoworkspace.com">
+
+  <meta property="og:image" content="https://acoworkspace.com/img/logo.png">
+  <meta property="og:image:width" content="300" />
+
+  <!-- Fin Open Graph-->
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+
   <title>Aco Workspace</title>
 </head>
 
@@ -22,8 +44,8 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand logo" href="index.html"><img src="img/logo.png" width="200px" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="boton-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,125 +65,147 @@
             </li>
             <a href="reservas.html" class="btn boton-relleno">Reserva</a>
           </ul>
-          
+
         </div>
       </div>
     </nav>
   </header>
   <main>
 
-<section class="portada mb-0">
-  <article class="postada_base">
-    <div class="carrusel_poratda">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <picture>
-              <source srcset="img/aco_slide_index.jpg" media="(min-width: 768px)">
-              <img src="img/aco_slide_index_movile.jpg" alt="MDN" class="d-block">
-             </picture>
+    <section class="portada mb-0">
+      <article class="postada_base">
+        <div class="carrusel_poratda">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <picture>
+                  <source srcset="img/aco_slide_index.jpg" media="(min-width: 768px)">
+                  <img src="img/aco_slide_index_movile.jpg" alt="MDN" class="d-block">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="img/aco_slide_index2.jpg" media="(min-width: 768px)">
+                  <img src="img/aco_slide_index_movile2.jpg" alt="MDN" class="d-block">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="img/aco_slide_index3.jpg" media="(min-width: 768px)">
+                  <img src="img/aco_slide_index_movile3.jpg" alt="MDN" class="d-block">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="img/aco_slide_index4.jpg" media="(min-width: 768px)">
+                  <img src="img/aco_slide_index_movile4.jpg" alt="MDN" class="d-block">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture>
+                  <source srcset="img/aco_slide_index5.jpg" media="(min-width: 768px)">
+                  <img src="img/aco_slide_index_movile5.jpg" alt="MDN" class="d-block">
+                </picture>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-item">
-            <picture>
-              <source srcset="img/aco_slide_index2.jpg" media="(min-width: 768px)">
-              <img src="img/aco_slide_index_movile2.jpg" alt="MDN" class="d-block">
-             </picture>          </div>
-          <div class="carousel-item">
-            <picture>
-              <source srcset="img/aco_slide_index3.jpg" media="(min-width: 768px)">
-              <img src="img/aco_slide_index_movile3.jpg" alt="MDN" class="d-block">
-             </picture>
+        </div>
+
+        <article class="portada_texto_base container h-100 mt-lg-4">
+          <div class="col-10 col-md-7 col-lg-6 d-flex align-items-lg-center align-content-end col-texto">
+            <div>
+              <div class="portada-texto fondo-negro">
+                <h1>¡Más que un CoWork, <span>una comunidad!</span></h1>
+                <p>¡El lugar donde tenés que estar! Muchos espacios un solo objetivo: que siempre dispongas de todas las
+                  comodidades que necesitas para trabajar</p>
+                <div class="d-flex">
+                  <a href="reservas.html" class="btn boton-relleno">Reserva</a>
+                  <!--  <a href="" class="btn boton-outline">conocenos </a> -->
+                </div>
+              </div>
+            </div>
+
           </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  
-  <article class="portada_texto_base container h-100 mt-lg-4">
-    <div class="col-10 col-md-7 col-lg-6 d-flex align-items-lg-center align-content-end col-texto">
-      <div>
-        <div class="portada-texto fondo-negro">
-          <h1>¡Más que un CoWork, <span>una comunidad!</span></h1>
-          <p>¡El lugar donde tenés que estar! Muchos espacios un solo objetivo: que siempre dispongas de todas las comodidades que necesitas para trabajar</p>
-          <div class="d-flex">
-            <a href="reservas.html" class="btn boton-relleno">Reserva</a>
-            <!--  <a href="" class="btn boton-outline">conocenos </a> -->
-          </div>
-        </div>
-      </div>
-
-    </div> 
-  </article>
-  
-
-  </article>
-</section>
+        </article>
 
 
-<section  class="m-auto mt-0 mb-0 ">
-    <section class="container inicio" id="porque">
-      <article class="row columnas-inversas align-items-center">
-        <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-          <img src="img/incio.png" alt="" class="d-block w-100">
-        </div>
-        <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-          <h2>Espacios de trabajo pensados para vos </h2>
-          <p>Si sos innovador, apasionado  y estás buscando un espacio donde compartir ideas, aprender de otros profesionales y trabajar en un ambiente creativo, <span class="negrita">ACO&nbspWorkspace</span> es para vos. 
-          </p>
-          <p>
-            Imaginá trabajar en un lugar y conectar con personas que comparten tus mismas pasiones. 
-             </p>
-        </div>
       </article>
     </section>
-</section>
 
-<div class="fondo-negro pdgnuevo">
-  <section class="container inicio" id="" style="
+
+    <section class="m-auto mt-0 mb-0 ">
+      <section class="container inicio" id="porque">
+        <article class="row columnas-inversas align-items-center">
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <img src="img/incio.png" alt="" class="d-block w-100">
+          </div>
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine">
+            <h2>Espacios de trabajo pensados para vos </h2>
+            <p>Si sos innovador, apasionado y estás buscando un espacio donde compartir ideas, aprender de otros
+              profesionales y trabajar en un ambiente creativo, <span class="negrita">ACO&nbspWorkspace</span> es para
+              vos.
+            </p>
+            <p>
+              Imaginá trabajar en un lugar y conectar con personas que comparten tus mismas pasiones.
+            </p>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <div class="fondo-negro pdgnuevo">
+      <section class="container inicio fondo-negro" id="" style="
   margin-bottom: 0;">
-    <article class="row columnas-inversas align-items-center">
-      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
-        <h2>¿Por qué sumarte?</h2>
-        <ul>
-          <li>
-            <div >
-              <h3 class="h5">Nuestros espacios</h3>
-              <p>Acceso a tecnología de última generación</p>
-            </div>
-          </li>
-          <li>
-            <div >
-              <h3 class="h5">Experiencias únicas</h3>
-              <p>Salas de reuniones, producciones y eventos </p>
-            </div>
-          </li>
-          <li>
-            <div >
-              <h3 class="h5">Crecé junto a ACO</h3>
-              <p>Capacitaciones para seguir aprendiendo y creciendo en tu carrera.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-        <img src="img/incio2.png" alt="" class="d-block w-100">
-      </div>
-    </article>
-  </section>
+        <article class="row columnas-inversas align-items-center ">
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine">
+            <h2>¿Por qué sumarte?</h2>
+            <ul>
+              <li>
+                <div>
+                  <h3 class="h5">Nuestros espacios</h3>
+                  <p>Acceso a tecnología de última generación</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="h5">Experiencias únicas</h3>
+                  <p>Salas de reuniones, producciones y eventos </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3 class="h5">Crecé junto a ACO</h3>
+                  <p>Capacitaciones para seguir aprendiendo y creciendo en tu carrera.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <img src="img/incio2.png" alt="" class="d-block w-100">
+          </div>
+        </article>
+      </section>
 
-</div>
+    </div>
 
-    
+
     <section class="fondo-rojo separador pdgnuevo " style="margin-top: 0; margin-bottom: 0;">
-      <div class="container d-flex flex-column justify-content-center align-items-lg-center" >
+      <div class="container d-flex flex-column justify-content-center align-items-lg-center">
         <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
           <p class="center" style="
           font-size: xxx-large;
@@ -175,133 +219,148 @@
     <!--unite al club -->
     <div class=" pdgnuevo">
       <section class="unite" style="margin:0 0 4.5rem 0;" id="suscripciones">
-        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+        <div class="container aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
           <div class="titulos-secciones">
             <h2 class="center">¡Elegí tu espacio ideal <span>para trabajar!</span></h2>
-            <p class="center">Muchos espacios, un solo objetivo: que siempre dispongas de la comodidad que necesitás para trabajar
+            <p class="center">Muchos espacios, un solo objetivo: que siempre dispongas de la comodidad que necesitás
+              para trabajar
             </p>
           </div>
-          
+
           <!--cards-->
-          <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+          <div class="row aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"
+            data-aos-easing="ease-in-sine">
             <div class="col-12 col-md-12 col-lg-4">
               <a href="workspace.html">
                 <div class="card fondo-rojo">
                   <div>
-                    <h5 class="text-start">ACO <br>  workspace</h5>
+                    <h5 class="text-start">ACO <br> workspace</h5>
                   </div>
                   <div>
-        
+
                     <img src="img/caja-suscripcione-mesual.png" class="card-img-top" alt="suscripcion mini chef">
-                    
+
                   </div>
                   <div class="text-start mt-3">
                     <h5>Contamos con tres packs:</h5>
                     <p>
-                      <span class="negrita text-uppercase">Individual: </span> Acceso a los espacios compartidos del CoWork <br>
-                      <span class="negrita text-uppercase">Desk: </span> Contas con tu escritorio fijo y todos los servicios del pack individual <br>
-                      <span class="negrita text-uppercase"> Office: </span> Reserva tu oficina privada. Capacidad desde 4 a +50 personas</p>
+                      <span class="negrita text-uppercase">Individual: </span> Acceso a los espacios compartidos del
+                      CoWork <br>
+                      <span class="negrita text-uppercase">Desk: </span> Contas con tu escritorio fijo y todos los
+                      servicios del pack individual <br>
+                      <span class="negrita text-uppercase"> Office: </span> Reserva tu oficina privada. Capacidad desde
+                      4 a +50 personas</p>
                     <h6>¡Reserva tu espacio!</h6>
                   </div>
-                  
+
                 </div>
-  
+
               </a>
+
+
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <a href="creative.html">
+                <div class="card fondo-amarillo">
+
+                  <h5 class="text-start">ACO <br> creative
+                  </h5>
+                  <div class="">
+                    <img src="img/caja-suscripcione-una-vez.png" class="card-img-top" alt="suscripcion mini chef">
+                  </div>
+                  <div class="text-start mt-3">
+                    <p>Contamos con diferentes espacios diseñados para la creación de contenidos y producciones de marcas.
+                    </p>
+                    <div class="d-none d-lg-block">
+                      <br> <br>
+                    </div>
+                    <h6>¡Reserva tu espacio!</h6>
+                  </div>
   
-              
+  
+                </div>
+
+              </a>
+
             </div>
             <div class="col-12 col-md-12 col-lg-4">
-              <div class="card fondo-amarillo">
-                
-                <h5 class="text-start">ACO <br>  creative
-      </h5><div>
-                  <img src="img/caja-suscripcione-una-vez.png" class="card-img-top" alt="suscripcion mini chef">
-                </div>
-                <div class="text-start mt-3">
-                  <div class="d-none d-lg-block">
-                    <br>
+              <a href="aparts.html">
+                <div class="card fondo-azul">
+                  <div>
+                    <h5 class="text-start">ACO <br> aparts
+                    </h5>
+                    <img src="img/caja-suscripcione-anual.png" class="card-img-top" alt="suscripcion mini chef">
+  
                   </div>
-                  <p>Contamos con diferentes espacios diseñados para la creación de contenidos y producciones de marcas.</p>
-                  <div class="d-none d-lg-block">
-                    <br> <br>
+                  <div class="text-start mt-3">
+                    <p>Si estás en CABA por trabajo o viajando, disponemos de aparts que se adaptan a tus necesidades,
+                      completamente equipados y de primera calidad para que puedas disfrutar de tu estadía.
+                    </p>
+                    <p>Incluye tu pase “Individual” de ACO&nbspWorkspace!</p>
+                    <h6>¡Reserva tu espacio!</h6>
                   </div>
-                  <h6>¡Reserva tu espacio!</h6>
+  
                 </div>
-                
-                
-              </div>
-            </div>
-            <div class="col-12 col-md-12 col-lg-4">
-              <div class="card fondo-azul">
-                <div>
-                  <h5 class="text-start">ACO <br>  aparts
-      </h5>
-      <img src="img/caja-suscripcione-anual.png" class="card-img-top" alt="suscripcion mini chef">
-                
-                </div>
-                <div class="text-start mt-3">
-                  <p>Si estás en CABA por trabajo o viajando, disponemos de aparts que se adaptan a tus necesidades, completamente equipados y de primera calidad para que puedas disfrutar de tu estadía. 
-                  </p>
-                  <p>Incluye tu pase “Individual” de ACO&nbspWorkspace!</p>
-                  <h6>¡Reserva tu espacio!</h6>
-                </div>
-                
-              </div>
+
+              </a>
+
             </div>
           </div>
         </div>
-  
+
       </section>
 
     </div>
 
-<div class="fondo-negro pdgnuevo">
-  <section class="container ">
-    <article class="titulos-secciones" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-      <h2 class="center mb-5">Ventajas <span>de elegirnos</span></h2>
-    </article>
-    <div class="row justify-content-around" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-      <article class="col-8 col-md-2 card-round">
-          <div><img src="img/ventaja-amarillo-flexible.svg" alt=""></div>
-          <div>
+    <div class="fondo-negro pdgnuevo">
+      <section class="container ">
+        <article class="titulos-secciones" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+          <h2 class="center mb-5">Ventajas <span>de elegirnos</span></h2>
+        </article>
+        <div class="row justify-content-around" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
+          <article class="col-8 col-md-2 card-round">
+            <div><img src="img/ventaja-amarillo-flexible.svg" alt=""></div>
+            <div>
               <h3>FLEXIBILIDAD</h3>
-              <p>Tenemos espacio y posibilidad para adaptarnos a todas las necesidades</p>
-          </div>
-      </article>
-      <article class="col-8 col-md-2 card-round">
-          <div><img src="img/ventaja-amarillo-calidad.svg" alt=""></div>
-          <div>
+              <p>Tenemos espacio y posibilidad para adaptarnos a todas tus necesidades</p>
+            </div>
+          </article>
+          <article class="col-8 col-md-2 card-round">
+            <div><img src="img/ventaja-amarillo-calidad.svg" alt=""></div>
+            <div>
               <h3>CALIDAD</h3>
               <p>Espacios, mobiliario y diseño de primera calidad</p>
-          </div>
-      </article>
-      <article class="col-8 col-md-2 card-round">
-          <div><img src="img/ventaja-amarillo-aparts.svg" alt=""></div>
-          <div>
+            </div>
+          </article>
+          <article class="col-8 col-md-2 card-round">
+            <div><img src="img/ventaja-amarillo-aparts.svg" alt=""></div>
+            <div>
               <h3>APARTS</h3>
               <p>Contamos con departamentos en el mismo edificio</p>
-          </div>
-      </article>
-      <article class="col-8 col-md-2 card-round">
-          <div><img src="img/ventaja-amarillo-creative.svg" alt=""></div>
-          <div>
+            </div>
+          </article>
+          <article class="col-8 col-md-2 card-round">
+            <div><img src="img/ventaja-amarillo-creative.svg" alt=""></div>
+            <div>
               <h3>CREATIVE CONTENT</h3>
-              <p>Espacios exclusivos, diseñados para la creación de contenido</p>
-          </div>
-      </article>
-      <article class="col-8 col-md-2 card-round">
-        <div><img src="img/ventaja-amarillo-comodidad.svg" alt=""></div>
-        <div>
-            <h3>COMODIDADES</h3>
-            <p>Todos los espacios cuentan con luz natural y condiciones ideales de trabajo
-            </p>
+              <p>Espacios exclusivos, diseñados para la creación de contenidos</p>
+            </div>
+          </article>
+          <article class="col-8 col-md-2 card-round">
+            <div><img src="img/ventaja-amarillo-comodidad.svg" alt=""></div>
+            <div>
+              <h3>COMODIDADES</h3>
+              <p>Todos los espacios cuentan con luz natural y condiciones ideales de trabajo
+              </p>
+            </div>
+          </article>
+
         </div>
-    </article>
+      </section>
 
-  </div>
-  </section>
-
-</div>
+    </div>
 
 
 
@@ -312,21 +371,23 @@
     <section class="container" id="contacto">
       <div class="titulos-secciones" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
         <h2 class="center">¿Te quedaste con dudas?</h2>
-        <p class="center">Escribinos, estamos atentos para responder todas las inquietudes que tengas. Dejanos tus datos para
+        <p class="center">Escribinos, estamos atentos para responder todas las inquietudes que tengas. Dejanos tus datos
+          para
           poder ayudarte.</p>
       </div>
-      <article class="row align-items-lg-center" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+      <article class="row align-items-lg-center" data-aos="fade-up" data-aos-duration="1500"
+        data-aos-easing="ease-in-sine">
         <!--contacto-->
         <form method="post" action="form.php" class="col-12 col-lg-6">
           <div class="row">
             <div class="form-floating col">
-              <input  name="nombre" type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
+              <input name="nombre" type="text" class="form-control" id="floatingNombre" placeholder="Nombre">
               <label for="floatingNombre" style="margin: 0.5rem;">Nombre</label>
             </div>
 
             <div class="form-floating col">
               <input name="apellido" type="text" class="form-control" id="floatingApellido" placeholder="Apellido">
-              <label for="floatingApellido"  style="margin: 0.5rem;">Apellido</label>
+              <label for="floatingApellido" style="margin: 0.5rem;">Apellido</label>
             </div>
           </div>
 
@@ -343,7 +404,7 @@
           <div class="boton">
             <button type="submit" class="btn boton-relleno">Enviar</button>
           </div>
-          
+
         </form>
         <div class="col-12 col-lg-6">
           <div class="imagen">

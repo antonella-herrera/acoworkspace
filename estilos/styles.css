@@ -190,7 +190,7 @@ button {
   color: #faebd7;
 }
 
-.abajo {
+.abajo, .fondo {
   background-color: #e7ddd5;
 }
 
@@ -268,10 +268,8 @@ footer .redes a {
   text-align: start;
   padding-left: 2rem;
 }
-@media screen and (min-width: 992px) {
-  .inicio p {
-    padding-left: 2rem;
-  }
+.inicio p {
+  padding-left: 2rem;
 }
 .inicio ul, .inicio p {
   padding-right: 0.5rem;
@@ -739,7 +737,6 @@ footer .redes a {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 @media screen and (min-width: 992px) {
   .unite .card {
@@ -808,6 +805,7 @@ footer .redes a {
   color: #e7ddd5;
   border-radius: 30px;
   padding: 20px;
+  margin-bottom: 1rem;
 }
 
 .card-round h3 {

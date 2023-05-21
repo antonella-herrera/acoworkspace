@@ -6,4 +6,3 @@ misMenuLinks.forEach(miMenuLink=>{
         miMenu.classList.remove("show")
     })
 })
-

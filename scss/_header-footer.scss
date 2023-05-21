@@ -11,9 +11,10 @@
 
 }
 
-.abajo{
+.abajo, .fondo{
     background-color: $color-claro;
 }
+
 header{
        /*    background-color: $color-claro;*/
            position: fixed;
@@ -31,10 +32,12 @@ header{
            }
            .navbar-nav{
             height: 100vh;
+
             @media screen and (min-width:992px) {
                 height: fit-content;
                 
             }
+
            }
 
     

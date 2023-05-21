@@ -80,7 +80,6 @@
         padding-bottom: 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         @media screen and (min-width:992px) {
             height: 95%;
             .card-title{
@@ -158,6 +157,7 @@
     color: $color-claro;
     border-radius: 30px;
     padding: 20px;
+    margin-bottom: 1rem;
 }
 
 .card-round h3 {
